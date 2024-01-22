@@ -30,7 +30,7 @@ jobs:
         run: npm run build
 
       - name: Create PR 
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v5
         with:
           commit-message: "style: Update design tokens"
           title: ${{ github.event.client_payload.commitMessage || 'Update design tokens' }}
