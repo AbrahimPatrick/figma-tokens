@@ -29,6 +29,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Check secrect
+        run: run: echo ${{ secrets.FIGMA_TOKENS_PROJECT }}
+
       - name: Create PR 
         uses: peter-evans/create-pull-request@v5
         with:
