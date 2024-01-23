@@ -36,4 +36,3 @@ jobs:
           title: ${{ github.event.client_payload.commitMessage || 'Update design tokens' }}
           body: "Design tokens have been updated via Figma and need to be reviewed."
           token: ${{ secrets.FIGMA_TOKENS_PROJECT }}
-          branch: 'master'
